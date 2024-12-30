@@ -21,7 +21,7 @@ const ProviderDetail: React.FC = () => {
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const xServiceName = queryParams.get('x-serviceName');
-    const { provider } = useParams<{ provider?: string }>();  // Get the 'id' from the URL params
+    const { provider } = useParams<{ provider?: string }>();  // Get the 'provider' from the URL params
     const [detail, setDetail] = useState<any>(null);
     useEffect(() => {
         const getProviderDetails = async () => {
